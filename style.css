@@ -577,9 +577,6 @@ section {
   .hide_on_mobile{
     display: block;
   }	
-  .socials{
-    display: none;
-  }	
   .contact_row p{
     display: none;
   }
