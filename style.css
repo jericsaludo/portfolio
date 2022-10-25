@@ -425,6 +425,9 @@ section {
   margin: 1rem;
   text-transform: uppercase;
 }
+.hide_on_mobile{
+  display: none;
+}
 
 
 @keyframes lining {
@@ -571,9 +574,16 @@ section {
   .contact_row{
     padding: 50px 0px;
   }
+  .hide_on_mobile{
+    display: block;
+  }	
+  .socials{
+    display: none;
+  }	
   .contact_row p{
     display: none;
   }
+
 }
 
 
