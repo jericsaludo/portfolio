@@ -20,7 +20,7 @@
     
 }
 .links2{
-    flex: 5;
+    flex: 3;
     display: flex;
     justify-content: space-around;
     padding: 0% 20px;
@@ -62,13 +62,21 @@
 @media (max-width: 760px){
     .links2{
         flex-direction: column;
-        padding: 0%;
-        
+        padding: 0%;   
+    }
+    .left{
+        flex: 3;
+    }
+    .right{
+        flex: 3;
     }
     .left h1{
         position: relative;
         display: block;
         margin-bottom: 1rem;
+    }
+    .socials{
+        display: none;
     }
     
   }

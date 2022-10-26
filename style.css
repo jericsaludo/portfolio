@@ -192,6 +192,7 @@ section {
 }
 .contact_shortcut {
   padding: 50px 15%;
+  
 }
 .contact_links {
   position: fixed;
@@ -219,13 +220,45 @@ section {
 
 }
 .bio {
+  display: grid;
+  /* justify-content: center;
+  align-items: center; */
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  /* padding-bottom: 5%;
+  padding-top: 20px; */
+  padding: 20px 15% 5% 15%;
+}
+.card{
+  min-height: 400px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5%;
-  padding-top: 20px;
+  flex-direction: column;
+  
+}
+.card:nth-child(1){
+  padding: 10% 30px;
+}
+.card:nth-child(2), .card:nth-child(3), .card:nth-child(4), .card:nth-child(5){
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+  padding: 10%;
+  justify-content: space-around;
+  border: solid 1px rgb(117, 117, 117);
+}
+.card img{
+  height: 200px;
+  width: auto;
+  align-self: center;
+  justify-self: center;
+  margin: 20px 0px;
+}
+.card h2{
+  display: inline-block;
 }
 .bio_container {
+  
   width: 40%;
   line-height: 2;
   padding: 30px;
@@ -425,6 +458,10 @@ section {
   margin: 1rem;
   text-transform: uppercase;
 }
+.hide_on_mobile{
+  display: none;
+}
+
 
 
 @keyframes lining {
@@ -556,6 +593,7 @@ section {
   }
   .bio{
     padding-top: 0px;
+    grid-template-columns: 1fr;
   }
   .about{
     padding: 0px 20px;
@@ -571,9 +609,16 @@ section {
   .contact_row{
     padding: 50px 0px;
   }
+  .hide_on_mobile{
+    display: block;
+  }	
   .contact_row p{
     display: none;
   }
+  .contact_shortcut{
+    padding-bottom: 0px;
+  }
+
 }
 
 
