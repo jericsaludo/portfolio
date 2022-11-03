@@ -25,6 +25,9 @@
     justify-content: space-around;
     padding: 0% 20px;
 }
+.links2 a{
+    font-family: "CosiAzure";
+}
 .left{
     flex: 3;
     display: flex;
@@ -37,6 +40,7 @@
 .left h1{
     position: relative;
     display: block;
+    
 }
 
 .left h1::before{
@@ -48,6 +52,10 @@
 .right{
     flex: 1;
     margin: 5rem;
+    
+}
+.right h2{
+    font-family: Arial, Helvetica, sans-serif;
 }
 .socials{
     align-self: flex-end;

@@ -39,6 +39,7 @@
 	</title>
 </head>
 <body>
+	
 	<script src="js/aos.js"></script> 
 	
 	<!-- cursor -->
@@ -58,14 +59,18 @@
 
 	
 	<!-- background noise -->
-	<video autoplay="true" loop="loop" muted="muted" class="background_vid">
+	<!-- <video autoplay="true" loop="loop" muted="muted" class="background_vid">
 		<source src="video/bg2.mp4">
-	</video>
+	</video> -->
 	<!-- <div class="bgnoise"></div> -->
 
 	<!-- profile pic large -->
 	<div class="image_overlay" id="imgOverlay">
 		<img src="images/profile.jpg" id="imgOverlay2">
+	</div>
+	<!-- screen loader -->
+	<div class="screen_loader">
+		Jeric Saludo
 	</div>
 	                                 
 
@@ -100,7 +105,7 @@
 		</div>
 	</div>
 
-	<nav>
+	<nav data-aos="fade-in" data-aos-delay="2100">
 		<div class="logo">
 			<img src="images/logo.png">
 		</div>
@@ -114,7 +119,7 @@
 	
 
 	<div class="padding_container">
-		<div class="name_and_pic">
+		<div class="name_and_pic" data-aos="fade-in" data-aos-delay="2100">
 			<div>
 				<h3>
 					Jeric Saludo.
@@ -125,38 +130,45 @@
 			<div class="pic" id="pic" onmouseover="darken()" onmouseout="lighten()"></div>
 		</div>
 
-		<div class="divider"></div>
+		<div class="divider" data-aos="line" data-aos-delay="2000"></div>
 
 		<!-- about -->
 		
 		<section class="about" id="about"> 
-			<div class="subheader" data-aos="fade-zoom-in">
+			<div class="subheader" data-aos="fade-zoom-in" data-aos-delay="2100">
 				// About
 			</div>
 			<div class="intro_text">
 				<div class="text-container-animate">
-					<span data-aos="text-up">
+					<span data-aos="text-up" data-aos-delay="2100">
 						<h1>
 							Let's build
 						</h1>
 					</span>
 				</div>
 				<div class="text-container-animate">
-					<span data-aos="text-up" data-aos-delay="100">
+					<span data-aos="text-up" data-aos-delay="2200">
 						<h1>
-							your website with a
+							your website
 						</h1>
 					</span>
 				</div>
 				<div class="text-container-animate">
-					<span data-aos="text-up" data-aos-delay="300">
+					<span data-aos="text-up" data-aos-delay="2300">
+						<h1>
+							with a
+						</h1>
+					</span>
+				</div>
+				<div class="text-container-animate">
+					<span data-aos="text-up" data-aos-delay="2400">
 						<h1>
 							minimal yet
 						</h1>
 					</span>
 				</div>
 				<div class="text-container-animate">
-					<span data-aos="text-up" data-aos-delay="500">
+					<span data-aos="text-up" data-aos-delay="2500">
 						<h1>
 							elegant design.
 						</h1>
@@ -165,7 +177,7 @@
 			</div>
 			<div class="contact_shortcut" id="contact_shorcut" data-aos="fade-zoom-in"
 				data-aos-easing="ease-in-back"
-				data-aos-delay="200"
+				
 				data-aos-anchor-placement="bottom-bottom"> 
 					<a href="#contact">
 						
@@ -174,10 +186,7 @@
 						
 					</a>
 				</div>
-			<div class="contact_links">
-				<!-- <a href="https://www.facebook.com/jxrdrgn">facebook</a>
-				<a>github</a>
-				<a>gmail</a> -->
+			<div class="contact_links" data-aos="fade-in" data-aos-delay="2100">
 				<a href="https://docdro.id/RqCEInU">CV</a>
 			</div>
 		</section>
@@ -284,14 +293,14 @@
 					<div class="text-container-animate">
 						<span data-aos="text-up" data-aos-delay="00">
 							<p>
-								My stay at Miyens helped me hone my skills in web designing.
+								- My stay at Miyens helped me hone my skills in web designing.
 							</p>
 						</span>
 					</div>
 					<div class="text-container-animate">
 						<span data-aos="text-up" data-aos-delay="100">
 							<p>
-								Most of the projects I'm involved with are built in WordPress.
+								- Most of the projects I'm involved with are built in WordPress.
 							</p>
 						</span>
 					</div>
@@ -309,7 +318,7 @@
 							<div class="bullet_container">
 								<div>01.</div>
 								<div>
-									Modified WordPress-made websites for their clients.
+									<p>Modified WordPress-made websites for their clients.</p>
 								</div>
 							</div>
 						</span>
@@ -319,7 +328,7 @@
 							<div class="bullet_container">
 								<div>02.</div>
 								<div>
-									Created documentation website for their products using HTML, CSS and JavaScript.
+									<p>Created documentation website for their products using HTML, CSS and JavaScript.</p>
 								</div>
 							</div>
 						</span>
@@ -329,7 +338,7 @@
 							<div class="bullet_container">
 								<div>03.</div>
 								<div>
-									Created WordPress version of the documentations for their products and solutions.
+									<p>Created WordPress version of the documentations for their products and solutions.</p>
 								</div>
 							</div>
 						</span>
@@ -339,7 +348,7 @@
 							<div class="bullet_container">
 								<div>04.</div>
 								<div>
-									Created WordPress demo pages for business website.
+									<p>Created WordPress demo pages for business website.</p>
 								</div>
 							</div>
 						</span>
@@ -349,7 +358,7 @@
 							<div class="bullet_container">
 								<div>05.</div>
 								<div>
-									Created WordPress demo pages for shop page using WooCommerce.
+									<p>Created WordPress demo pages for shop page using WooCommerce.</p>
 								</div>
 							</div>
 						</span>
@@ -358,18 +367,10 @@
 					<div class="text-container-animate">
 						<span data-aos="text-up" data-aos-delay="00">
 							<p>
-								I've also gained experience upon building a portfolio website
+								- I've also gained experience upon building a portfolio website for a client outside the company.
 							</p>
 						</span>
 					</div>
-					<div class="text-container-animate">
-						<span data-aos="text-up" data-aos-delay="00">
-							<p>
-								for a client outside the company.
-							</p>
-						</span>
-					</div>
-
 
 				</div> 
 			</div>
@@ -409,21 +410,21 @@
 					<div class="text-container-animate">
 						<span data-aos="text-up" data-aos-delay="00">
 							<p>
-								Spent the last 6 years at University of the East - Caloocan.
+								- Spent the last 6 years at University of the East - Caloocan.
 							</p>
 						</span>
 					</div>
 					<div class="text-container-animate">
 						<span data-aos="text-up" data-aos-delay="100">
 							<p>
-								Graduated with Honors during Senior High, taking the ICT Track.
+								- Graduated with Honors during Senior High, taking the ICT Track.
 							</p>
 						</span>
 					</div>
 					<div class="text-container-animate">
 						<span data-aos="text-up" data-aos-delay="300">
 							<p>
-								Took BSIT Course during college. This time, I managed to graduate with Latin Honor - Magna Cum Laude.
+								- Took BSIT Course during college. This time, I managed to graduate with Latin Honor - Magna Cum Laude.
 							</p>
 						</span>
 					</div>
@@ -509,52 +510,13 @@
 				<div class="message_container">
 					<div class="text-container-animate">
 						<span data-aos="text-up">
-							<h2>
-								Send me a message and<br>let's start a journey together.
-							</h2>
+							
+							<p>Send me a message and<br>let's start a journey together.</p>
 						</span>
 					</div>
 					
 				</div>
-				<!-- <div class="contact_row">
-					<p>
-						Email
-					</p>
-					<div class="contact_text email_details">
-						<div class="text-container-animate">
-							<span data-aos="text-up">
-								<h1>
-									<a>
-										saludo.jeric19
-									</a>
-								</h1>
-							</span>
-						</div>
-						<div class="text-container-animate">
-							<span data-aos="text-up" data-aos-delay="100">
-								<h1>
-									<a>
-										@gmail.com
-									</a>
-								</h1>
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="contact_row">
-					<p>
-						Number (PHI)
-					</p>
-					<div class="contact_text number_details">
-						<div class="text-container-animate">
-							<span data-aos="text-up">
-								<h1>
-									+63917 946 5957
-								</h1>
-							</span>
-						</div>
-					</div>
-				</div> -->
+				
 				<div class="contact_row">
 					<p>
 						Upwork
@@ -625,7 +587,7 @@
 
 
 
-
+	
 
 
 
@@ -641,8 +603,7 @@
 	<!-- div 3d -->
 	<script src="js/div3d.js"></script>
 
-	<!-- image parallax on work section -->
-	<script src="js/image_parallax.js"></script>
+	
 
 	<!-- change color on work section -->
 	<script src="js/colorScroll.js"></script>
@@ -650,6 +611,9 @@
 	<!-- change color on work section -->
 	<script src="js/smoothscroll.js"></script>
 
+
+	<!-- screen loader -->
+	<script src="js/screenloader.js"></script>
 	
 
 

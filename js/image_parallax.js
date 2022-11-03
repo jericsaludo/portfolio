@@ -22,7 +22,7 @@ function scroll() {
             if (mappedY > paramax) mappedY = paramax;
             console.log(mappedY);
             gsap.to(img.childNodes[1], {
-                "--y": mappedY + "vh", duration: 0.8, ease: Power4.easeOut
+                "--qwe": mappedY + "vh", duration: 0.8, ease: Power4.easeOut
             });
         }
     }
